@@ -1,0 +1,35 @@
+.section {
+  flex: 1;
+  color: #000;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000;
+}
+
+.title::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 27px;
+  bottom: 20px;
+  width: 9px;
+  height: 9px;
+  border: 8px solid rgba(170, 102, 102, 0.6);
+  border-radius: 12.5px;
+}
+
+.descritpion {
+  margin: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.79px;
+  color: #000;
+}

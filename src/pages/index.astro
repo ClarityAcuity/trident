@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar";
+import Content from "../components/Content";
+import { getData, getItems } from "../api";
+
+const items = await getItems();
+const data = await getData();
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Navbar client:load items={items} />
+    <Content client:visible data={data} />
+  </main>
+</Layout>
+
+<style>
+  main {
+    color: white;
+  }
+
+  @media screen and (min-width: 768px) {
+    main {
+      display: flex;
+    }
+  }
+</style>
