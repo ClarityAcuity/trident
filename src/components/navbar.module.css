@@ -23,7 +23,7 @@ a:hover {
   color: #000;
 }
 
-.icon {
+.iconWrapper {
   margin: 0;
   padding: 0;
   border-radius: 50%;
@@ -55,7 +55,7 @@ a:hover {
     line-height: 27.24px;
   }
 
-  .icon {
+  .iconWrapper {
     width: 49px;
     height: 49px;
     margin-right: 24px;
@@ -96,13 +96,16 @@ a:hover {
     line-height: 40.86px;
   }
 
-  .icon {
+  .iconWrapper {
     position: absolute;
     width: 96px;
     height: 96px;
     top: 49px;
     right: -49px;
-    z-index: 1;
+  }
+
+  .iconWrapper div {
+    transform: translateX(25%) translateY(40%) scale(1.4);
   }
 
   .item {

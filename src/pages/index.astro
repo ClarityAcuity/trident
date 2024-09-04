@@ -10,7 +10,7 @@ const data = await getData();
 
 <Layout title="Welcome to Astro.">
   <main>
-    <Navbar client:load items={items} />
+    <Navbar client:only="react" items={items} />
     <Content client:visible data={data} />
   </main>
 </Layout>

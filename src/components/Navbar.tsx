@@ -3,6 +3,7 @@ import styles from "./navbar.module.css";
 import hamburgur from "../images/hamburgur.svg";
 import cross from "../images/cross.svg";
 import { useResponsiveWidth } from "../hooks";
+import Icon from "./Icon";
 import type { Item } from "../api";
 
 interface Props {
@@ -32,7 +33,9 @@ export default function Navbar({ items }: Props) {
           />
         </div>
         <h1 className={styles.title}>白頭翁不吃小米</h1>
-        <div className={styles.icon}></div>
+        <div className={styles.iconWrapper}>
+          <Icon />
+        </div>
       </div>
       {isOpen && (
         <div className={styles.tabs}>
